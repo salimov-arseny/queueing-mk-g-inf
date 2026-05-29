@@ -87,7 +87,7 @@ queueing-mk-g-inf/
 ## Установка
 
 ```bash
-git clone https://github.com/<your-username>/queueing-mk-g-inf.git
+git clone https://github.com/salimov-arseny/queueing-mk-g-inf.git
 cd queueing-mk-g-inf
 pip install -r requirements.txt
 pytest tests/ -v
