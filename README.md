@@ -46,7 +46,7 @@ $$F(t_1, t_2) = (1 - e^{-t_1})(1 - e^{-t_2})(1 + \alpha e^{-t_1 - t_2}),\qquad \
 
 The parameter $\alpha$ controls within-batch dependence: $\alpha = 0$ — independence, $\alpha > 0$ — positive correlation, $\alpha < 0$ — negative.
 
-![FGM density contours](figures/fgm_density_contours.pdf)
+![FGM density contours](figures/fgm_density_contours.png)
 
 **Function $g_{\{1\}}(t)$:**
 
@@ -54,14 +54,14 @@ $$g_{\{1\}}(t) = (1 - e^{-t}) - \frac{\alpha + 1}{2}(1 - e^{-2t}) + \frac{2\alph
 
 $$\lim_{t \to \infty} g_{\{1\}}(t) = \frac{1}{2} - \frac{\alpha}{12}.$$
 
-![Dynamics of g_{1}(t)](figures/g1_plot.pdf)
+![Dynamics of g_{1}(t)](figures/g1_plot.png)
 
 **Entries of $\mathrm{Cov}(D(t_1), D(t_2))$:**
 
 - Diagonal: $c_{ii}(t_1, t_2) = \lambda(\min(t_1, t_2) - 1 + e^{-\min(t_1, t_2)})$
 - Off-diagonal: a long expression implemented in `cov_dd_offdiag_fgm` (formula (8) of the thesis)
 
-![Covariance matrix](figures/covariance_matrix.pdf)
+![Covariance matrix](figures/covariance_matrix.png)
 
 ## A "correlation conservation law"
 
