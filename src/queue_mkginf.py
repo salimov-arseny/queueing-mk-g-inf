@@ -1,7 +1,7 @@
 """Departure process of the M^k/G/infinity batch-arrival queue
 with heterogeneous dependent demands.
 
-Reference implementation accompanying the bachelor thesis of A.E. Salimov
+Reference implementation accompanying the 4th-year course paper of A.E. Salimov
 (MSU, Faculty of Mechanics and Mathematics, Department of Probability
 Theory, 2026) supervised by Prof. G.I. Falin.
 
