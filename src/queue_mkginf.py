@@ -77,7 +77,7 @@ class FGMExponential:
         rng = rng if rng is not None else np.random.default_rng()
         u = rng.uniform(size=size)
         v = rng.uniform(size=size)
-        a = self.alpha * (2.0 * u - 1.0)
+        a = self.alpha * (1.0 - 2.0 * u)
         b = -(1.0 + a)
         c = a
         d = np.sqrt(b * b - 4.0 * a * v)
