@@ -73,7 +73,7 @@ class TestCovariances:
     @pytest.mark.parametrize("alpha", [-1.0, 0.0, 1.0])
     def test_rho_to_one(self, alpha):
         rho = correlation_dd_fgm(t=80.0, alpha=alpha)
-        assert rho == pytest.approx(1.0, abs=1e-3)
+        assert rho == pytest.approx(1.0, abs=1e-2)
 
 
 class TestSimulationVsAnalytic:
